@@ -1,0 +1,6 @@
+Tiếng Việt:
+Dán code firebase realtime database vào file connect.js
+Sửa các đường link: https://tuannhat.000webhostapp.com/ ; https://tuannhat.000webhostapp.com/room.html ; https://tuannhat.000webhostapp.com/admin.html bằng các đường link dẫn tới file index.html, room.html, admin.html của riêng bạn.
+English:
+Paste firebase database code into file connect.js
+Change links: https://tuannhat.000webhostapp.com/ ; https://tuannhat.000webhostapp.com/room.html ; https://tuannhat.000webhostapp.com/admin.html by links go to your file index.html, room.html, admin.html.

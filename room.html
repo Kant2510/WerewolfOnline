@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web của Nhậc</title>
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+        <script type="module" src="js/room.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/room.css"/>
+        <script src = "https://kit.fontawesome.com/c29bc16b23.js" crossorigin = "anonymous"></script>
+    </head>
+    <body>
+        <div class = "menu">
+            <div>
+                <button id = "button-logout"><i class="fas fa-sign-out-alt" style="font-size: 40px;"></i></button>
+            </div>
+            <div class="members">
+                <div id = "container">
+                    <!--<table class = "table table-dark">
+                        <thead>
+                            <th>STT</th>
+                            <th>Biệt Danh</th>
+                        </thead>
+                        <tbody id = "tbody"></tbody>
+                    </table>-->
+                    <div id = "list"></div>
+                </div>
+                <div class = "status"> 
+                    <p>Werewolf Online</p>
+                    <div id = "my-info">
+                        <li><span>Biệt danh: </span><b id = 'my-name'></b></li>
+                        <li><span>Vai trò: </span><b id = 'my-role'></b></li>
+                        <li><span>Phòng: </span><b id = 'my-room'></b></li>
+                        <li><span>Số lượng người chơi: </span><b id = "numbers-of-people"></b></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab">
+            <!--Bắt Đầu Phần Tab Header-->
+            <div class="tab-header">
+                <div class="active"><i class="fab fa-wolf-pack-battalion" style="margin-right: 4px;"></i></i>Mô tả</div>
+                <div><i class="fas fa-info-circle" style="margin-right: 4px;"></i>Cách chơi</div>
+            </div>
+            <!--Kết Thúc Phần Tab Header-->
+            <div class="tab-border"></div>
+            <div class="tab-indicator"></div>
+            <div class="tab-indicatoru"></div>
+             <!--Bắt Đầu Phần Tab Body-->
+            <div class="tab-body">
+                <div class="active" >
+                    <p id = "info-of-role"></p>
+                </div>
+               <div>
+                    <p>Trò chơi chia làm hai buổi ban ngày và ban đêm. Bắt đầu vào đêm đầu tiên, các vai trò đặc 
+                        biệt sẽ được quản trò gọi dậy trong đêm, vai trò dân làng sẽ ngủ suốt đêm cho đến 
+                        khi trời sáng. Ban ngày là thời gian tất cả cùng thức dậy và cùng nhau thảo luận ai là 
+                        sói để thực hiện treo cổ (có thể chọn treo cổ hoặc không). Bất cứ ai bị chọn treo cổ sẽ 
+                        có khoảng thời gian để biện hộ cho mình, sau đó những người bình chọn sẽ biểu quyết là 
+                        sống hoặc chết, nếu phiếu chết cao hơn, người đó sẽ bị loại ra khỏi cuộc chơi (không được 
+                        tham gia bất cứ hoạt động nào sau đó, kể cả thảo luận). Trò chơi có thể sẽ xuất hiện thêm 
+                        phe thứ ba nếu có các vai trò đặc biệt được người quản trò bỏ vào, càng nhiều người chơi 
+                        thì sẽ càng nhiều vai trò. Số lượng sói, dân làng và phe thứ ba cũng sẽ thay đổi theo số 
+                        lượng người tham gia chơi. Trò chơi sẽ kết thúc khi:
+                        Phe sói có số lượng ngang phe người - sói Thắng;
+                        phe sói bị tiêu diệt hết - dân làng thắng;
+                        phe thứ ba thực hiện xong nhiệm vụ của mình -phe thứ ba thắng.</p>
+                </div>
+            </div>
+            <!--Kết Thúc Phần Tab Body-->
+        </div>
+    </body>
+</html>

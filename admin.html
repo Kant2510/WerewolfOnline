@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web của Nhậc</title>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdncom/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <script type='module' src="js/admin.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/admin.css" />
+    <script src="https://kit.fontawesome.com/c29bc16b23.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="boxbutton">
+        <button id="button-start"><i class="far fa-play-circle" style="margin-right: 4px;"></i>Bắt Đầu</button>
+        <button id="button-end"><i class="fas fa-stop" style="margin-right: 4px;"></i>Kết Thúc</button>
+    </div>
+    <section>
+        <div class="tbl-header">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                    <tr>
+                        <th class="stt">STT</th>
+                        <th>Biệt Danh</th>
+                        <th>Vai Trò</th>
+                        <th class="fas0">Đổi Mode</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="tbl-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div id="my-info">
+        <p id='my-role'>Quản Trò</p>
+        <div id="status">
+            <p id='my-room'></p>
+            <p id="numbers-of-people"></p>
+        </div>
+    </div>
+</body>
+
+</html>
