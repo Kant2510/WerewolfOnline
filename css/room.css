@@ -1,0 +1,235 @@
+@font-face {
+    font-family: font-of-nhac;
+    src: url("../font/VNF-Comic\ Sans.ttf") format('truetype');
+}
+
+body {
+    font-family: font-of-nhac;
+    color: white;
+    background-image: url(../images/room.png);
+}
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/**/
+
+#container {
+    background-color: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(5px);
+    width: 60%;
+    margin: 30px;
+    border: 1px solid white;
+    height: 280px;
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#container ul li {
+    color: black;
+    margin: 0px auto 0px -40px;
+    text-align: center;
+    line-height: 75px;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    list-style: none;
+    font-size: 40px;
+}
+
+#container ul p {
+    margin: 5px auto 0px -40px;
+    text-align: center;
+    border: 0px solid green;
+    font-size: 15px;
+    width: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#container ul {
+    margin: 10px 10px;
+    width: 40px;
+    border: 0px solid red;
+}
+
+#list {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/**/
+
+.status {
+    border: 0px solid green;
+    margin: 50px auto 30px auto;
+}
+
+#my-info {
+    list-style: circle;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    line-height: 2.5;
+    padding: 10px;
+}
+
+.status p {
+    text-align: center;
+    font-size: 25px;
+    margin: -10px auto 10px auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+span {
+    position: relative;
+    font-weight: bold;
+    padding: 3px 9px 3px 9px;
+    color: #512b00;
+    background-color: rgb(135 206 235 / 0.7);
+    border-radius: 20px;
+    margin: auto -70px auto -9px;
+    z-index: 1;
+}
+
+b {
+    width: 100px;
+    font-weight: bold;
+    padding: 3px 15px 3px 80px;
+    color: #000000;
+    background-color: rgb(221 221 221 / 0.3);
+    border-radius: 50px;
+}
+
+
+/**/
+
+.tab {
+    margin: 0px 30px;
+    width: 60%;
+}
+
+.tab .tab-header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.tab .tab-header>div {
+    width: 35%;
+    text-align: center;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.tab .tab-header .active {
+    color: #d90000;
+}
+
+.tab .tab-border {
+    position: relative;
+    margin-top: -50px;
+    border: 2px solid #ccc;
+    border-bottom: none;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 50px;
+    width: 35%;
+    left: 0px;
+    transition: all 500ms ease-in-out;
+    z-index: 2;
+}
+
+.tab .tab-indicator {
+    position: relative;
+    width: 35%;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    height: 2px;
+    background-color: #ffc8c8;
+    left: 0px;
+    margin-top: -2px;
+    transition: all 500ms ease-in-out;
+    z-index: 1;
+}
+
+.tab .tab-indicatoru {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+    left: 0px;
+    margin-top: -2px;
+    transition: all 500ms ease-in-out;
+}
+
+.tab .tab-body {
+    font-size: 15px;
+    position: relative;
+    height: calc(100% - 60);
+    padding: 1px 15px;
+    border-left: 2px solid #ccc;
+}
+
+.tab .tab-body>div {
+    display: none;
+}
+
+.tab .tab-body>div.active {
+    text-align: justify;
+    display: block;
+}
+
+#button-logout {
+    height: 50px;
+    width: 50px;
+    transform: rotate(180deg);
+    background: none;
+    color: white;
+    border: none;
+    margin: 10px 0px 0px 10px;
+}
+
+#button-logout:disabled {
+    color: rgba(255, 255, 255, 0.1)
+}
+
+#button-logout:hover:enabled {
+    color: #24c1eb;
+}
+
+@media only screen and (max-width: 900px) {
+    #container {
+        width: 90%;
+        font-size: 3 0px;
+        margin: 30px auto;
+    }
+    #container ul {
+        margin-right: 10px;
+    }
+    .status {
+        margin-top: 0px;
+    }
+    #my-info {
+        line-height: 2.3;
+    }
+    .tab {
+        width: 90%;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        background-image: url(../images/room-mobile.png);
+    }
+}

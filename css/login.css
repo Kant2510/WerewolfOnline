@@ -1,1 +1,532 @@
+@font-face {
+    font-family: font-of-nhac;
+    src: url("../font/VNF-Comic\ Sans.ttf") format('truetype');
+}
 
+body {
+    margin: 0px;
+    font-family: font-of-nhac;
+    background-image: url(../images/login.png);
+    width: 100%;
+    height: 100%;
+}
+
+
+/* chỉnh cho hộp menu*/
+
+.menu {
+    box-sizing: border-box;
+    margin: 200px auto;
+    background-color: beige;
+    box-shadow: -5px -5px 8px rgba(255, 255, 255, 0.2), 5px 5px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    height: 100%px;
+    width: 40%;
+}
+
+.box-login {
+    padding-top: 80px;
+}
+
+
+/* chỉnh phần nhập*/
+
+#name-box,
+#id-box {
+    margin-bottom: 30px;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin: 10px 0px 0px 10%;
+    width: 80%;
+}
+
+.form__field {
+    line-height: 1.5;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 20px;
+    color: #eeac85;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+    font-size: 20px;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    top: 0;
+    position: absolute;
+    display: block;
+    transition: 0.5s;
+    color: #9b9b9b;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 100;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #f05c06, #afef38);
+    border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.5s;
+    font-size: 1rem;
+    color: #e4954a;
+    font-weight: 700;
+}
+
+
+/* reset input */
+
+.form__field:required,
+.form__field:invalid {
+    box-shadow: none;
+}
+
+
+/* Chỉnh loading*/
+
+#loading {
+    margin-left: 10%;
+    display: none;
+}
+
+.loader {
+    margin-top: 0.1%;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    perspective: 800px;
+}
+
+.inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.inner.one {
+    left: 0%;
+    top: 0%;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #33EBFF;
+}
+
+.inner.two {
+    right: 0%;
+    top: 0%;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #33FF98;
+}
+
+.inner.three {
+    right: 0%;
+    bottom: 0%;
+    animation: rotate-three 1s linear infinite;
+    border-top: 3px solid #FF00FF;
+}
+
+@keyframes rotate-one {
+    0% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-two {
+    0% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rotate-three {
+    0% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+
+/* Chỉnh phần nút*/
+
+button {
+    font-size: inherit;
+    line-height: inherit;
+    font-family: font-of-nhac;
+    box-shadow: -5px -5px 8px rgba(255, 255, 255, 0.7), 5px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover:enabled {
+    cursor: pointer;
+}
+
+input {
+    font-family: font-of-nhac;
+    font-size: inherit;
+}
+
+.button-box {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 65px;
+    padding-bottom: 65px;
+}
+
+button:disabled {
+    background-color: #888;
+    border-radius: 10px;
+    border: none;
+}
+
+#button-login:disabled #open {
+    display: none;
+}
+
+#button-login:enabled #close {
+    display: none;
+}
+
+#button-admin:enabled,
+#button-login:enabled {
+    background-color: #f05c06;
+    height: 50px;
+    color: bisque;
+    border-radius: 10px;
+    border: none;
+}
+
+#button-admin:disabled,
+#button-login:disabled {
+    height: 50px;
+    ;
+}
+
+#button-admin:hover:enabled,
+#button-login:hover:enabled {
+    background-color: #06aef0;
+}
+
+
+/* Chỉnh box nổi tạo phòng*/
+
+.popbox {
+    width: 100%;
+}
+
+.popbox h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.formid {
+    width: 80%;
+    margin: 10px auto 10px auto;
+}
+
+.formid p {
+    padding: 0px 0px 3px 3px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.formid input {
+    background-color: rgb(150, 150, 150);
+    width: 100%;
+    height: 25px;
+}
+
+.formcr {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: rgb(253 213 130 / 30%);
+    backdrop-filter: blur(2px);
+    margin: auto;
+    padding: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    width: 35%;
+    height: 70%;
+    border-radius: 25px;
+}
+
+.closebtn {
+    background: none;
+    box-shadow: none;
+    width: 6%;
+    border: none;
+}
+
+.formrole {
+    list-style: none;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 7px;
+    margin-top: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.formrole b {
+    font-size: 15px;
+}
+
+.formrole li {
+    margin: 10px 5px 10px 5px;
+    padding: 0px 3px 10px 3px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#wolf,
+#villager,
+#seeker,
+#cupid,
+#hunter,
+#witch,
+#guard,
+#substitute,
+#villolf,
+#cursed,
+#lawyer,
+#soul,
+#changer,
+#angel,
+#devil {
+    vertical-align: middle;
+    color: #979797;
+}
+
+form {
+    color: #979797;
+    width: auto;
+    margin: -3px 10px auto auto;
+    float: right;
+}
+
+.value-button-decrease:hover,
+.value-button-increase:hover {
+    cursor: pointer;
+}
+
+form .value-button-decrease {
+    display: inline-block;
+    border: 0px solid #9a9a9a;
+    margin: 0px;
+    width: 25px;
+    text-align: center;
+    vertical-align: middle;
+    background: rgb(53, 53, 53);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 25px;
+    margin-right: -5px;
+    border-radius: 8px 0 0 8px;
+}
+
+form .value-button-increase {
+    display: inline-block;
+    border: 0px solid #9a9a9a;
+    margin: 0px;
+    width: 25px;
+    text-align: center;
+    vertical-align: middle;
+    background: rgb(53, 53, 53);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 25px;
+    margin-left: -5px;
+    border-radius: 0 8px 8px 0;
+}
+
+form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+}
+
+.number {
+    background-color: rgb(65, 65, 65);
+    text-align: center;
+    border: none;
+    border-top: 0px solid #9a9a9a;
+    border-bottom: 0px solid #9a9a9a;
+    margin: 0px;
+    height: 23px;
+    width: 23px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#idroom {
+    height: 50px;
+    box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.2), 0px 4px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 7px 0px rgba(0, 0, 0, 0.12);
+    border: 2px solid rgb(77, 77, 77);
+    border-radius: 15px;
+}
+
+#button-create {
+    box-shadow: none;
+    width: 90%;
+    margin: 10px 5%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+#button-create:enabled {
+    color: #fffbd6;
+    background-color: #f05c06;
+}
+
+#button-create:enabled:hover {
+    background-color: #33ff88;
+}
+
+
+/*     */
+
+#alert1 {
+    color: red;
+    font-size: 14px;
+    margin: 1% 0px 0px 10%;
+}
+
+#alert2 {
+    color: red;
+    font-size: 14px;
+    margin-left: 10%;
+}
+
+
+/*màn hình rộng 930px*/
+
+@media only screen and (max-width: 930px) {
+    .menu {
+        width: 80%;
+    }
+    .modal-content {
+        width: 75%;
+    }
+}
+
+
+/*màn hình rộng 350px*/
+
+@media only screen and (max-width: 370px) {
+    .formrole b {
+        font-size: 50%;
+    }
+    form {
+        margin-top: 3px;
+        font-size: 10px;
+    }
+    .number {
+        height: 18px;
+        width: 18px;
+    }
+    form .value-button-decrease {
+        height: 20px;
+        width: 20px;
+    }
+    form .value-button-increase {
+        height: 20px;
+        width: 20px;
+    }
+    .button-box {
+        font-size: 70%;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+
+/*iphone 5/SE*/
+
+@media only screen and (max-height: 600px) {
+    #idroom {
+        height: auto;
+    }
+    .modal-content h2 {
+        font-size: 97%;
+    }
+    #button-create {
+        height: auto;
+        margin-top: 20px;
+    }
+    .button-box {
+        font-size: 70%;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+    .box-login {
+        height: 50%;
+    }
+    .menu {
+        margin: 50px auto;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        background-image: url(../images/login-mobile.png);
+    }
+}
