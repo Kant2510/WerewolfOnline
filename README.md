@@ -22,7 +22,7 @@ Chúng ta sẽ đang nhập vào phòng chơi với biệt danh tự đặt và 
 # Introduction:
 The Werewolves of Millers Hollow (TWOMH) board game is created by the French authors Philippe des Pallières and Hervé Marly, based on the Mafia board game from Russia that was nominated for the 2003 Spiel des Jahres award. TWOMH can be played with 8 to 47 players.
 Plot: A peace village's harassed by the apparition of werewolves. At night, they kill villagers silently, in the morning, they masquerading as a human. Villagers find and deduce together to execute werewolves.
-# Luật chơi
+# Game rule:
 The game administrator prepare cards representing the roles and deal to the players. There are two stages:
 + Night: all players close their eyes and "go to sleep". The game administrator wake special roles up and they perform their role silently.
 ![image](https://user-images.githubusercontent.com/88287313/138872408-365b36db-bbe3-447a-9113-44e83d76b953.png)
