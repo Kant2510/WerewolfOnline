@@ -7,7 +7,8 @@
     <title>Web của Nhậc</title>
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdncom/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
     <script type='module' src="js/admin.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/admin.css" />
+    <script type='module' src="js/chat.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/admin.css">
     <script src="https://kit.fontawesome.com/c29bc16b23.js" crossorigin="anonymous"></script>
 </head>
 
@@ -42,6 +43,21 @@
             <p id='my-room'></p>
             <p id="numbers-of-people"></p>
         </div>
+    </div>
+    <div class="boxchat">
+        <div class="popbox" id="pop-box">
+            <div id="chat-frame">
+            <div id="input">
+                <div id="chat"></div>
+                <div class="messsend">
+                <input type="text" id="mess">
+                <button id="send"><i class="far fa-paper-plane"></i></button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <button class="open-btn"><i class="far fa-comments" id="open"></i></button>
+        <button class="close-btn" disabled><i class="far fa-times-circle" id="close"></i></button>
     </div>
 </body>
 

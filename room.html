@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Web của Nhậc</title>
         <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
         <script type="module" src="js/room.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/room.css"/>
+        <script type="module" src="js/chat.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/room.css">
         <script src = "https://kit.fontawesome.com/c29bc16b23.js" crossorigin = "anonymous"></script>
     </head>
     <body>
@@ -62,12 +63,27 @@
                         phe thứ ba nếu có các vai trò đặc biệt được người quản trò bỏ vào, càng nhiều người chơi 
                         thì sẽ càng nhiều vai trò. Số lượng sói, dân làng và phe thứ ba cũng sẽ thay đổi theo số 
                         lượng người tham gia chơi. Trò chơi sẽ kết thúc khi:
-                        Phe sói có số lượng ngang phe người - sói Thắng;
+                        phe sói có số lượng ngang phe người - sói thắng;
                         phe sói bị tiêu diệt hết - dân làng thắng;
-                        phe thứ ba thực hiện xong nhiệm vụ của mình -phe thứ ba thắng.</p>
+                        phe thứ ba thực hiện xong nhiệm vụ của mình - phe thứ ba thắng.</p>
                 </div>
             </div>
             <!--Kết Thúc Phần Tab Body-->
+        </div>
+        <div class="boxchat">
+            <div class="popbox" id="pop-box">
+                <div id="chat-frame">
+                <div id="input">
+                    <div id="chat"></div>
+                    <div class="messsend">
+                    <input type="text" id="mess">
+                    <button id="send"><i class="far fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <button class="open-btn"><i class="far fa-comments" id="open"></i></button>
+            <button class="close-btn" disabled><i class="far fa-times-circle" id="close"></i></button>
         </div>
     </body>
 </html>
