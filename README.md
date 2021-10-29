@@ -23,13 +23,19 @@ Chúng ta sẽ đang nhập vào phòng chơi với biệt danh tự đặt và 
 The Werewolves of Millers Hollow (TWOMH) board game is created by the French authors Philippe des Pallières and Hervé Marly, based on the Mafia board game from Russia that was nominated for the 2003 Spiel des Jahres award. TWOMH can be played with 8 to 47 players.
 Plot: A peace village's harassed by the apparition of werewolves. At night, they kill villagers silently, in the morning, they masquerading as a human. Villagers find and deduce together to execute werewolves.
 # Game rule:
-The game administrator prepare cards representing the roles and deal to the players. There are two stages:
-+ Night: all players close their eyes and "go to sleep". The game administrator wake special roles up and they perform their role silently.
+Game administrator prepare cards representing the roles and deal to players. There are two stages:
++ Night: all players close their eyes and "go to sleep". Game administrator wake special roles up and they perform their role silently.
 ![image](https://user-images.githubusercontent.com/88287313/138872408-365b36db-bbe3-447a-9113-44e83d76b953.png)
-+ Day: Everyone "wake up". The game administrator announce to the players who were killed last night. Those people are not allowed to talk or discuss anything. Depending on how you play, the game administrator reveal the identity of the killed (or not). Then people debate and vote to "hang" a certain player they think is a wolf. This person will be disqualified.
++ Day: Everyone "wake up". Game administrator announce to players who were killed last night. Those people are not allowed to talk or discuss anything. Depending on how you play, game administrator reveal the identity of the killed (or not). Then people debate and vote to "hang" a certain player they think is a werewolf. This person will be disqualified.
 ![image](https://user-images.githubusercontent.com/88287313/138872942-bd6bfcb1-aa09-4f5f-9c5c-a5e08c83f589.png)
-The game will end when the wolves kill all the villagers or the villagers hang all the wolves or the third side complete their task.
+The game will end when wolves faction kill all villagers or villagers faction hang all the wolves or third faction complete their task.
 # Online Version
-Now we can play TWOMH online version on the WerewolfOnline website that's created by the author Kant. I try very hard to make it as close to the original as possible and develop it more and more. Promises to give you the best playing experience.
+Now we can play TWOMH online version on the WerewolfOnline website that's created by author Kant. I try very hard to make it as close to the original as possible and develop it more and more. Promises to give you the best playing experience.
 # What does this website has?
-You can enter the playroom with a nickname and ID room provided by the game administrator. In the playroom, the players take on a separate role. All communicate with each other by face-to-face online.
+You can enter playroom with a nickname and ID room provided by game administrator. In the playroom, players take on a random role. All communicate by face-to-face online.
+________________________________________
+# Cập nhật
+*29/10/21: Tính năng chat trong phòng giữa những người chơi và quản trò.
+________________________________________
+# Update
+*29/10/21: Chat features in room, players and game administrator can text together.
