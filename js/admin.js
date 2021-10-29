@@ -152,7 +152,6 @@ let tabBorder = document.getElementsByClassName("tab-border")[0];
 let tabBody = document.getElementsByClassName("tab-body")[0];
 let tabsPane = tabHeader.getElementsByTagName("div");*/
 document.addEventListener("click", (event) => {
-    console.log(document.getElementsByClassName("swap").disabled);
     if (list_name_string.includes(event.target.value) && document.getElementsByClassName("swap").disabled == false) {
         update(ref(database, "RoomCreate/" + "Room: " + localStorage.id + "/"), {
             Admin: event.target.value

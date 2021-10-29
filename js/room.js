@@ -165,6 +165,9 @@ function printroompage() {
                 Admin: ""
             });
             localStorage.admin = true;
+            if(stt == 1){
+                remove(ref(database, "Message/" + "Room: " + localStorage.id));
+            }
             window.location = "https://tuannhat.000webhostapp.com/admin.html";
         } else {
             localStorage.admin = false;
@@ -173,6 +176,9 @@ function printroompage() {
 }
 
 function logout() {
+    if(stt == 1){
+        remove(ref(database, "Message/" + "Room: " + localStorage.id));
+    }
     remove(ref(database, "RoomsList/" + "Room: " + localStorage.id + "/" + localStorage.name));
     window.location = "https://tuannhat.000webhostapp.com/";
 }
@@ -184,7 +190,10 @@ function getout() {
     onDisconnect(ref(database, "RoomsList/" + "Room: " + localStorage.id + "/" + localStorage.name)).remove(localStorage.name);
     get(child(ref(database), "RoomsList/" + "Room: " + localStorage.id + "/" + localStorage.name)).then((snapshot) => {
         if (!snapshot.exists()) {
-            window.location = "https://tuannhat.000webhostapp.com/";
+            if(stt == 0){
+                remove(ref(database, "Message/" + "Room: " + localStorage.id));
+            }
+            window.location = "https://tuannhat.000webhostapp.com/";   
         }
     });
 }
